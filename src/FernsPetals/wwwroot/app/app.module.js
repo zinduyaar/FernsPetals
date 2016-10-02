@@ -12,11 +12,15 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
 var http_1 = require('@angular/http');
+var angular2_swiper_1 = require('angular2-swiper');
 var app_component_1 = require('./app.component');
 var home_component_1 = require('./home/home.component');
 var about_component_1 = require('./about/about.component');
-// import { routing, appRoutingProviders } from './app.routing';
+var app_routing_1 = require('./app.routing');
 var character_service_1 = require('./shared/character.service');
+var header_component_1 = require('./layout/header/header.component');
+// Shared components
+var poster_slider_component_1 = require('./shared/poster-slider/poster-slider.component');
 var material_1 = require('@angular/material');
 var AppModule = (function () {
     function AppModule() {
@@ -27,17 +31,20 @@ var AppModule = (function () {
                 platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
                 http_1.HttpModule,
-                // routing,
-                material_1.MaterialModule
+                app_routing_1.routing,
+                material_1.MaterialModule.forRoot(),
+                angular2_swiper_1.KSSwiperModule
             ],
             providers: [
-                // appRoutingProviders,
+                app_routing_1.appRoutingProviders,
                 character_service_1.CharacterService
             ],
             declarations: [
                 app_component_1.AppComponent,
                 home_component_1.HomeComponent,
-                about_component_1.AboutComponent
+                about_component_1.AboutComponent,
+                header_component_1.HeaderComponent,
+                poster_slider_component_1.PosterSliderComponent
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 

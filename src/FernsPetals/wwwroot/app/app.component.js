@@ -9,14 +9,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var material_1 = require('@angular/material');
 var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            viewProviders: [material_1.MdIconRegistry],
             selector: 'app-root',
             templateUrl: 'app.component.html'
         }), 

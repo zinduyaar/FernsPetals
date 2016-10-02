@@ -24,7 +24,10 @@
 
             '@angular/material': 'npm:@angular/material',
             // other libraries
-            'rxjs': 'npm:rxjs'
+            'rxjs': 'npm:rxjs',
+
+            'angular2-swiper': 'npm:angular2-swiper',
+            'swiper': 'npm:swiper'
         },
         // packages tells the System loader how to load when no filename and/or no extension
         packages: {
@@ -38,6 +41,14 @@
             '@angular/material': {
             format: 'cjs',
             main: 'material.umd.js'
+            },
+            'angular2-swiper': {
+                main: 'dist/index.js',
+                defaultExtension: 'js'
+            },
+            'swiper': {
+                main: 'dist/js/swiper.js',
+                defaultExtension: 'js'
             }
         }
     });

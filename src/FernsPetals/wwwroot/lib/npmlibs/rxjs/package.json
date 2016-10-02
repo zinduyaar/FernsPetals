@@ -16,7 +16,6 @@
   "_from": "rxjs@>=5.0.0-beta.12 <6.0.0",
   "_id": "rxjs@5.0.0-beta.12",
   "_inCache": true,
-  "_installable": true,
   "_location": "/rxjs",
   "_nodeVersion": "5.0.0",
   "_npmOperationalInternal": {
@@ -41,7 +40,7 @@
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "http://registry.npmjs.org/rxjs/-/rxjs-5.0.0-beta.12.tgz",
+  "_resolved": "https://registry.npmjs.org/rxjs/-/rxjs-5.0.0-beta.12.tgz",
   "_shasum": "cdfde2d8c4639d20ae7794bff8fddf32da7ad337",
   "_shrinkwrap": null,
   "_spec": "rxjs@^5.0.0-beta.12",

@@ -1,0 +1,9 @@
+<div class="myslides">
+    <ks-swiper-container [options]="example1SwipeOptions">
+      <ks-swiper-slide *ngFor="let image of images">
+        <img src="{{image.url}}">
+      </ks-swiper-slide>
+    </ks-swiper-container>
+    <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+  </div>
